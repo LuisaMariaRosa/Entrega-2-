@@ -9,20 +9,21 @@
 <body>
     <form action="Ingresa tus datos.php" method="post">
         <label>Nombre</label>
-        <input type="text" name="nombre" size="15">
+        <input type="text" name="nombre" required placeholder="Ej. José">
         <br>
         <label>Apellidos</label>
-        <input type="text" name="Apellidos" size="15">
+        <input type="text" name="Apellidos" required placeholder="Ej. Pérez">
         <br>
         <label>Fecha de nacimiento</label> 
-        <input type="date">
+        <input type="date" required>
         <br>
         <label>Pais de residencia</label>
-        <input type="text" name="Pais" size="40">
+        <input type="text" name="Pais" required placeholder="Ej. Colombia">
         <br>
         <label>Correo electrónico</label>
-        <input type="mail" id="mail" pattern="rosita@hfdmvpo.com" size="40" required/>
-        </form>
-    
+        <input type="email" name="correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Introduce un correo electrónico válido" placeholder="correo@ejemplo.com">
+        <button type="submmit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
 </body>
 </html>

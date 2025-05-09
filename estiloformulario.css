@@ -1,5 +1,67 @@
-body
-{
-    color: rgb(0, 0, 0);
-   
+/* Fondo general */
+body {
+    background-color: #b7ecff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="date"],
+input[type="mail"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+button {
+    background-color: rgb(0, 171, 201);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(0, 145, 170);
+}
+
+/* Mensajes de error */
+input:invalid:focus {
+    border: 2px solid red;
+    outline: none;
+    box-shadow: o o 5px red;
+}
+
+input:invalid:focus {
+    outline: none;
+    box-shadow: 0 0 5px red;
 }
